@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-Driven Career Counseling System for Students</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">AI Career Counseling</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how" class="nav-link">How It Works</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#assessment" class="nav-link cta">Start Assessment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <canvas class="hero-bg-anim"></canvas>
+    <div class="container hero-content">
+      <h1>Discover Your Ideal Career Path with AI</h1>
+      <p>Empowering students to make smarter career choices with intelligent, personalized guidance.</p>
+      <button class="cta-btn" id="startNowBtn">Start Now</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container features-grid">
+      <div class="feature-card" data-sr>
+        <div class="icon">🤖</div>
+        <h3>AI-powered Career Suggestions</h3>
+        <p>Personalized career paths based on your unique profile and aspirations.</p>
+      </div>
+      <div class="feature-card" data-sr>
+        <div class="icon">🎯</div>
+        <h3>Skill & Interest Matching</h3>
+        <p>Match your skills and interests to the best-fit careers.</p>
+      </div>
+      <div class="feature-card" data-sr>
+        <div class="icon">📚</div>
+        <h3>Course & Learning Path Recommendations</h3>
+        <p>Get course suggestions to build the right skills for your goals.</p>
+      </div>
+      <div class="feature-card" data-sr>
+        <div class="icon">💼</div>
+        <h3>Resume & Interview Readiness Tips</h3>
+        <p>Prepare for your dream job with tailored resume and interview advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Start your assessment by sharing your interests, skills, and goals.</li>
+        <li>Our AI analyzes your profile and matches you to ideal career paths.</li>
+        <li>Get personalized course recommendations and career tips.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Assessment Section -->
+  <section class="assessment" id="assessment">
+    <div class="container">
+      <h2>Start Your Career Assessment</h2>
+      <form id="assessmentForm" class="assessment-form">
+        <label>Interests:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="interests" value="Science"> Science</label>
+          <label><input type="checkbox" name="interests" value="Art"> Art</label>
+          <label><input type="checkbox" name="interests" value="Technology"> Technology</label>
+          <label><input type="checkbox" name="interests" value="Business"> Business</label>
+        </div>
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" multiple>
+          <option value="Communication">Communication</option>
+          <option value="Problem Solving">Problem Solving</option>
+          <option value="Creativity">Creativity</option>
+          <option value="Coding">Coding</option>
+          <option value="Design">Design</option>
+        </select>
+        <label for="goals">Your Goal:</label>
+        <input type="text" id="goals" name="goals" placeholder="e.g. Become a Data Scientist" required>
+        <button type="submit" class="cta-btn">Get My Career Path</button>
+      </form>
+      <div id="resultSection" class="result-section"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Success Stories</h2>
+      <div class="testimonial-carousel">
+        <button class="carousel-arrow left" id="prevTestimonial" aria-label="Previous testimonial">&#8592;</button>
+        <div class="testimonial-list">
+          <div class="testimonial active">
+            <p>
+              "The AI-Driven Career Counseling System helped me discover a career I never considered before. The personalized recommendations made my journey so much clearer."
+            </p>
+            <div class="author">— Priya S., Student</div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "I loved how easy it was to get started. The skill and interest matching was spot on and the course suggestions were really helpful!"
+            </p>
+            <div class="author">— Rahul M., Student</div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "A must-have tool for every student. The AI recommendations opened my eyes to new possibilities and helped me plan my learning path."
+            </p>
+            <div class="author">— Ananya T., Student</div>
+          </div>
+        </div>
+        <button class="carousel-arrow right" id="nextTestimonial" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>AI Career Counseling</h3>
+        <p>Contact: info@aicareercounsel.com | +91 98765 43210</p>
+        <div class="footer-social">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub">🐙</a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook">🌐</a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">🐦</a>
+          <a href="mailto:info@aicareercounsel.com" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 AI-Driven Career Counseling System for Students
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
