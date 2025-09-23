@@ -83,7 +83,7 @@ def detect_gesture(frame, landmark_list, processed):
             cv2.putText(frame, "Screenshot Taken", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
 
 def main():
-    draw = mp.solutions.drawing_utilsq()
+    draw = mp.solutions.drawing_utils
     cap = cv2.VideoCapture(0)
 
     try:
